@@ -1,0 +1,860 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Ashutosh Jainvi | UI/UX Designer</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1 , maximum-scale=1, user-scalable=0">
+		<link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
+		<script type="application/x-javascript">function hideURLbar(){
+  			if (window.scrollY == 0) window.scrollTo(0,1);}
+		</script>
+		<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/animations.css">
+   		<link rel="stylesheet" type="text/css" href="css/menu-button.css" />
+   		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+   		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+   		<link rel="stylesheet" type="text/css" href="css/landing.css">
+		<link rel="stylesheet" type="text/css" href="css/simptip-mini.css" media="screen,projection" />
+		<!-- <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	</head>
+
+	<body>
+		<div class="nav_settings--button" onclick="displayNavSettings()">
+			<div class="nav_settings--icon"><i class="fa fa-sliders"></i></div>
+		</div>
+		<div class="nav_settings--wrapper">
+			<div class="nav_settings--header">
+				<h2>Settings</h2>
+			</div>
+		</div>
+		<!-- ================ LANDING PAGE STARTS ================== -->
+			<div class="container hero">
+				<div class="hero_header">
+					<div class="switch">
+	            		<div class="switch-state off switch" id="switch-off"><div id="switch-on"></div></div>
+	       			</div>
+				</div>
+       			<div class="hero_content--upper">
+       				<div id="light-bulb" class="off ui-draggable"><div id="light-bulb2" style="opacity:0;"></div></div>
+					<div id="lampadario" style="z-index:999999">
+		       		 	<input type="radio" name="switch" value="on"  class="inputs" />
+		       			<input type="radio" name="switch" value="off" checked="checked" class="inputs"/>
+		       			<label for="switch" ></label>
+		        		<div id="filo"></div>
+		    		</div>
+		    		<div class="hero_content--right">
+						<div class="guy floating"></div>
+						<div class="couch"></div>
+					</div>
+					<div class="clear"></div>
+       			</div>
+				
+				<div class="hero-content--lower"> 
+					<div class="hero_content--lower-inner">
+						<h1>Welcome to Ashutosh's room simulator<span class="hero_content--punctuation">! This room is pure JS, no frameworks.</span>
+							<span class="usernameDisplayField blue display-none"></span><span tabindex="1" class="hero_username--edit display-none" onclick="editUsername()">edit</span>
+						</h1>
+						<input id="usernameInputBox" class="hero_usernameInputBox" type="text" placeholder="Hey You! Tell me your name & I will give you some secrets." onkeypress="saveUsername(event)" autofocus>
+						<span class="hero_inputBorder"></span>
+						<input class="hero_usernameInformator display-none" type="text" placeholder="" disabled>
+					</div>
+				</div>
+				<div class="hero_message--button" id="projectsButton" onmouseout="resetHeroMsg()">
+					<div class="hero_message--icon"><i class="fa fa-user-secret"></i></div>
+					<div class="hero_message--text"><span id="hero-text">View Technical Projects</span></div>
+				</div>
+			</div>
+			<!-- ================ LANDING PAGE ENDS ================== -->
+			<!-- =================== MENU STARTS ===================== -->
+			<!-- <button class="cn-button" id="cn-button">+ <span class="tooltiptext" style="font-size:16px">Menu</span></button>
+			<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				      <li><a href="#portfolio" title="Work" class="scroll"><span class="fa fa-pencil" aria-hidden="true"></span></a></li>
+				      <li><a href="#about" title="About"  class="scroll"><span class="fa fa-id-card-o " aria-hidden="true"></span></a></li>
+				      <li><a href="#home" title="Home" class="scroll"><span class="fa fa-home" aria-hidden="true"></span></a></li>
+				      <li><a href="#connect" title="Connect" class="scroll"><span class="fa fa-linkedin-square" aria-hidden="true"></span></a></li>
+				      <li><a href="Ashutosh_resume_designer_2017.pdf" target="_blank" title="Download Resume"><span class="fa fa-file-pdf-o" aria-hidden="true"></span></a></li>
+				     </ul>
+			</div>
+			<div id="cn-overlay" class="cn-overlay"><span>Click anywhere to EXIT</span><span>Click on button to EXIT</span></div> -->
+			<!-- =================== MENU ENDS ===================== -->
+
+			<div class="header" id="home">
+				<!--start-wrap-->
+				<div class="wrap">
+					<div class="top-header" >
+						<div class="logo" id="header" >
+							<a href="index.html"><span></span></a>
+						</div>
+						<div class="clear"> </div>
+					</div>
+					<!-- start page-2 images show -->
+					<div class="images-container">
+						<div class="creativity hidden"></div>
+						<div class="guy floating"></div>
+						<div class="bench"></div>
+					</div>
+					<!-- end page-2 images -->
+							
+				</div>
+			</div>
+			<!--End-header-->
+			<!--start-content-->
+		<div class="content backgroundRepeat">
+			<div class="wrap ">
+			<div class="about-me-head recent-works-head" id="about">
+					<div class="headings" ><img src="images/about.png" width="540px" class="marginLeft"></div>
+					<p>My name is <span class="yellow">Ashutosh Jainvi</span>. I am a  software engineer and web designer  based in Buffalo, New York with 3 years of designing experience. I am currently studying computer science at <span class="yellow">University at Buffalo</span>.</p>
+				</div>
+				<!--start-top-grids-->
+				<div class="top-service-grids">
+					<div class="top-service-grid hidden">
+						<a href=""><img src="images/top-grid-pic1.png" alt="Designer" /></a>
+						<a href=""><span>Designer</span></a>
+						<p>I design!</p>
+					</div>
+					<div class="top-service-grid hidden">
+						<a href=""><img src="images/top-grid-pic2.png" alt="" /></a>
+						<a href=""><span>Thinker</span></a>
+						<p>I explore!</p>
+					</div>
+					<div class="top-service-grid hidden">
+						<a href=""><img src="images/top-grid-pic3.png" alt="Developer" /></a>
+						<a href=""><span>Developer</span></a>
+						<p>I implement!</p>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<!--End-top-grids-->
+			</div>
+			<!-- ++++++++++++++++++START TIMELINE+++++++++++++++++++++++++++ -->
+			<section class="cd-horizontal-timeline" >
+				<div class="timeline">
+					<h3>Experience - Go through the timeline. <span style="font-size:11px;">click on the dates</span></h3>
+					<div class="events-wrapper">
+						<div class="events">
+							<ol>
+								<li><a href="#0" data-date="28/11/2015" class="selected">28 Sept</a></li>
+								<li><a href="#0" data-date="20/05/2016">20 May</a></li>
+								<li><a href="#0" data-date="09/06/2016">09 June</a></li>
+								<li><a href="#0" data-date="20/08/2016">20 Aug</a></li>
+								<li><a href="#0" data-date="20/12/2017">20 Dec</a></li>
+							</ol>
+
+							<span class="filling-line" aria-hidden="true"></span>
+						</div> <!-- events timeline ends -->
+					</div> <!-- events-wrapper -->
+			
+					<ul class="cd-timeline-navigation">
+						<li><a href="#0" class="prev inactive">Prev</a></li>
+						<li><a href="#0" class="next">Next</a></li>
+					</ul> <!-- .cd-timeline-navigation -->
+				</div> <!-- timeline ends -->
+
+				<div class="events-content">
+					<ol>
+						<li class="selected" data-date="28/11/2015">
+							<h2>Started working at SDC</h2>
+							<em>September 28th, 2013</em>
+							<p>	SDC - Software Development center also known as Software Incubator - <a href="http://www.silive.in" target="_blank"><span class="yellow">www.silive.in<span></span></a>. Worked as <span class="yellow"> web designer/developer</span> for 3 years.</p>
+						</li>
+
+						<li data-date="20/05/2016">
+							<h2>Left SDC</h2>
+							<em>May 20th, 2016</em>
+							<p>	
+								After working for 3 years, it was time to graduate with <span class="yellow"> 3 years </span> experience of Designing.
+							</p>
+						</li>
+
+						<li data-date="09/06/2016">
+							<h2>Completed Undergraduate</h2>
+							<em>June 9th, 2016</em>
+							<p>	
+								Graduated from <span class="yellow">Uttar Pradesh Technical University</span> with Bachelor of Technology degree.
+						</li>
+
+						<li data-date="20/08/2016">
+							<h2>Started Masters Degree</h2>
+							<em>August 20th, 2016</em>
+							<p>	
+								Started masters (computer science) program at <span class="yellow">University at Buffalo</span>.
+							</p>
+						</li>
+
+						<li data-date="20/12/2017">
+							<h2>Graduation date</h2>
+							<em>December 20th, 2017</em>
+							<p>	
+								Will graduate with a <span class="yellow" > Masters in Computer Science & Engineering</span> degree.
+							</p>
+						</li>
+
+					</ol>
+				</div> <!-- .events-content ends -->
+			</section>
+
+			<!-- =====SKILLS START =======-->
+			<div class="skills content backgroundRepeat">
+				<div class="wrap">
+					<div class="skills-grids">
+						<div class="skills-grid skills-grid1">
+							<div class="skills-grid-left hidden" >
+								<span></span>
+							</div>
+							<div class="skills-grid-right">
+								<h3><a href=""> UI/UX Designer</a></h3>
+								<p>- Adobe Photoshop- Illustrator - After Effects - HTML5 - CSS3 - Bootstrap - Javascript - jQuery - Wordpress - </p>
+								<a class="skillsbtng" href="Ashutosh_resume_designer_2017.pdf" target="_blank">Designer Resume</a>
+							</div>
+							<div class="clear"> </div>
+						</div>
+						<div class="skills-grid2">
+							<div class="skills-grid2-left">
+								<h3><a href="">Developer</a></h3>
+								<p>- C - Python - Java - R - NodeJs - ExpressJs - SQL - Solr - Lucene -</p>
+								<a class="skillsbtnb" href="Ashutosh_resume_2017.pdf" target="_blank">Developer Resume</a>
+							</div>
+							<div class="skills-grid2-right hidden" >
+								<span></span>
+							</div>
+							<div class="clear"> </div>
+						</div>	
+						<div class="clear"> </div>
+					 </div>
+				</div>
+			</div>
+			<!-- ====== End skills ========-->
+			<!-- jquery for timeline -->
+			<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+			<script src="js/timeline.js"></script>
+			<!-- jquery for switch -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>	
+
+			<!--start-recent-work-->
+			<div class="recent-works" id="portfolio">
+				<div class="wrap">
+					<div class="recent-works-head">
+						<div class="headings" >
+							<img src="images/work.png" width="540px" class="marginLeft">
+						</div>
+						<p>Have a look at my recent work.</p>
+					</div>
+					<!--start-mfp -->	
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="pop_up">
+							<h2>N-Quire</h2>
+							<img src="images/p1.jpg" alt="Image 2" style="top: 0px;">
+							<p class="para"><a href="http://www.aneeshbhatnagar.com/n-quire/" target="_blank">Go to website.</a></p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Direct Me</h2>
+							<img src="images/p2.jpg" alt="Image 2" style="top: 0px;">
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Techtrishna</h2>
+							<img src="images/p3.jpg" alt="Image 2" style="top: 0px;">
+							<p class="para"><a href="https://ashujainvi.github.io/techtrishna2015/" target="_blank">Go to website.</a>
+							</br>
+							<a href="https://ashujainvi.github.io/techtrishna2015-mobile/" target="_blank" class="yellow">Mobile website.</a></p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Scrolls</h2>
+							<img src="images/p4.jpg" alt="Image 2" style="top: 0px;">
+							<p class="para"><a href="http://scrolls15.silive.in" target="_blank">Go to 2015 website.</a></br>
+							<a href="http://www.akgec-scrolls.com" target="_blank">Go to 2016 website.</a></p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Scrolls Coming Soon</h2>
+							<img src="images/p5.jpg" alt="Image 2" style="top: 0px;">
+							<p class="para"><a href="https://ashujainvi.github.io/scrollscomingsoon2015/" target="_blank">Go to website.</a></p>
+						</div>
+					</div>
+					<div id="small-dialog6" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Table tennis</h2>
+							<img src="images/p6.jpg" alt="Image 2" style="top: 0px;">
+							<p class="para"><a href="https://ashujainvi.github.io/tabletennis2014/" target="_blank">Go to 2014 website.</a>
+							</br>
+							<a href="http://tabletennis.silive.in/" target="_blank" class="yellow">Go to 2016 website.</a></p>
+						</div>
+					</div>
+					<div id="small-dialog7" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Cream Craft</h2>
+							<img src="images/p7.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog8" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Torque HP</h2>
+							<img src="images/p8.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog9" class="mfp-hide">
+						<div class="pop_up">
+							<h2>DC</h2>
+							<img src="images/p9.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog10" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Watch</h2>
+							<img src="images/p10.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog11" class="mfp-hide">
+						<div class="pop_up">
+							<h2>3D Printing</h2>
+							<img src="images/p11.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog12" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Direct Me</h2>
+							<img src="images/p12.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog13" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Techtrishna</h2>
+							<img src="images/p13.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog14" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Nainital</h2>
+							<img src="images/p14.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog15" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Software Incubator</h2>
+							<img src="images/p15.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog16" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Flex</h2>
+							<img src="images/p16.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog17" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Typography</h2>
+							<img src="images/p17.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog18" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Reiches 3.0</h2>
+							<img src="images/p18.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog19" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Nainital BnW</h2>
+							<img src="images/p19.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog20" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Image Typography</h2>
+							<img src="images/p20.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<div id="small-dialog21" class="mfp-hide">
+						<div class="pop_up">
+							<h2>Qutub Minar</h2>
+							<img src="images/p21.png" alt="Image" style="top: 0px;">
+							<p class="para"></p>
+						</div>
+					</div>
+					<!---end-mfp -->
+					<div class="gallery">
+						<div class="clear"> </div>
+						<div class="container">
+							<ul id="filters" class="clearfix hidden workList">
+								<li><span class="filter" data-filter="web">web</span></li>
+								<li><span class="filter" data-filter="illustrations">illustrations</span></li>
+								<li><span class="filter" data-filter="posters">posters</span></li>
+								<li><span class="filter" data-filter="photography">photography</span></li>
+							</ul>
+
+							<div id="portfoliolist">
+								<div class="portfolio web mix_all hidden" data-cat="web" style=" display: inline-block; opacity: 1; ">
+									<div class="portfolio-wrapper">				
+										<a class="popup-with-zoom-anim" href="#small-dialog1">
+											<img src="images/p1.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">N-Quire Website</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>				
+								<div class="portfolio web mix_all hidden" data-cat="web" style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog2">
+											<img src="images/p2.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Direct Me Game</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>		
+								<div class="portfolio web mix_all hidden" data-cat="web" style="  display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">						
+										<a class="popup-with-zoom-anim" href="#small-dialog3">
+											<img src="images/p3.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Techtrishna 2015</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>				
+								<div class="portfolio web mix_all hidden" data-cat="web" style="  display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog4">
+											<img src="images/p4.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Scrolls 2015</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>	
+											
+								<div class="portfolio web mix_all hidden" data-cat="web" style="  display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a class="popup-with-zoom-anim" href="#small-dialog5">
+											<img src="images/p5.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Scrolls Coming Soon</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>			
+								
+								<div class="portfolio web mix_all hidden" data-cat="web" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog6">
+											<img src="images/p6.jpg" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Table Tennis</a>
+												<span class="text-category">WEB</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog7">
+											<img src="images/p7.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Cream Craft</a>
+												<span class="text-category">LOGO</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog8">
+											<img src="images/p8.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Torque HP (Prototype)</a>
+												<span class="text-category">LOGO</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog9">
+											<img src="images/p9.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">DC</a>
+												<span class="text-category">LOGO</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog10">
+											<img src="images/p10.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Watch</a>
+												<span class="text-category">ILLUSTRATION</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog11">
+											<img src="images/p11.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">3D Printing Guy</a>
+												<span class="text-category">ILLUSTRATION</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio illustrations mix_all hidden" data-cat="illustrations" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog12">
+											<img src="images/p12.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Direct Me - Game Logo</a>
+												<span class="text-category">LOGO</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog13">
+											<img src="images/p13.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Techtrishna 2015</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog14">
+											<img src="images/p14.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Nainital - Destination Design</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog15">
+											<img src="images/p15.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">SI - Virtual Flex</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog16">
+											<img src="images/p16.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">SI Flex</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog17">
+											<img src="images/p17.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Ashutosh Typography</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio posters mix_all hidden" data-cat="posters" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog18">
+											<img src="images/p18.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Reiches 3.0</a>
+												<span class="text-category">POSTER</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio photography mix_all hidden" data-cat="photography" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog19">
+											<img src="images/p19.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Nainital</a>
+												<span class="text-category">PHOTOGRAPHY</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio photography mix_all hidden" data-cat="photography" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog20">
+											<img src="images/p20.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Image Typography</a>
+												<span class="text-category">PHOTOGRAPHY</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio photography mix_all hidden" data-cat="photography" style=" display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">			
+										<a class="popup-with-zoom-anim" href="#small-dialog21">
+											<img src="images/p21.png" alt="Image 2" style="top: 0px;">
+										</a>
+										<div class="label" style="bottom: -40px;">
+											<div class="label-text">
+												<a class="text-title">Qutub Minar, Delhi</a>
+												<span class="text-category">PHOTOGRAPHY</span>
+											</div>
+											<div class="label-bg"></div>
+										</div>
+									</div>
+								</div>
+							</div> <!-- PORTFOLIO LIST ENDS -->
+						</div><!-- container -->
+						<div class="clear"> </div>
+						<!-- <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+						<script type="text/javascript">$('body').flipLightBox()</script> -->
+						<!--start-gallery-script-->
+						<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+						<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+						<script type="text/javascript">
+							$(function () {
+								var filterList = {
+									init: function () {
+										$('#portfoliolist').mixitup({
+											targetSelector: '.portfolio',
+											filterSelector: '.filter',
+											effects: ['fade'],
+											easing: 'snap',
+											onMixEnd: filterList.hoverEffect()
+										});				
+									
+									},
+									hoverEffect: function () {
+										$('#portfoliolist .portfolio').hover(
+											function () {
+												$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+												$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+											},
+											function () {
+												$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+												$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+											}		
+										);				
+									}
+								};
+								// Run the show!
+								filterList.init();
+							});	
+						</script>
+							<!-- Add fancyBox main JS and CSS files -->
+							<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+							<link href="css/magnific-popup.css" rel="stylesheet" type="text/css">
+							<script>
+										$(document).ready(function() {
+											$('.popup-with-zoom-anim').magnificPopup({
+												type: 'inline',
+												fixedContentPos: false,
+												fixedBgPos: true,
+												overflowY: 'auto',
+												closeBtnInside: true,
+												preloader: false,
+												midClick: true,
+												removalDelay: 300,
+												mainClass: 'my-mfp-zoom-in'
+										});
+									});
+							</script>
+						<!--//End-gallery-script-->
+						<div class="clear"> </div>
+					</div> <!-- END GALLERY -->
+				</div> <!-- END WRAP -->
+			</div>
+			<!--End-recent-work-->
+			<!--start-contact-->
+			<div class="contact backgroundRepeat" id="connect">
+				<div class="wrap">
+				<div class="contact-head">
+					<div class="headings" >
+						<img src="images/connect.png" width="540px" class="marginLeft">
+					</div>
+					<!-- <h3>Contact Me</h3> -->
+					<p>Getting in touch is easy!</p><br/>
+					<p>E-mail me at <span class="blue"> ajainvi@buffalo.edu </span> </p>	
+				</div>
+				<div class="contact-grid">
+				</div>
+				<div class="contact-form hidden">
+					<form id="form" action="https://formspree.io/ashujainvi@gmail.com" method="POST">
+						<input type="text" name="name" value="Name :" value="Name :" onfocus="if(this.value == 'Name :') this.value='';" onblur="if(this.value == '') this.value='Name :';" required>
+						<input type="text" name="email" value="Email :" onfocus="if(this.value == 'Email :') this.value='';" onblur="if(this.value == '') this.value='Email :';" required>
+						<textarea  name="message" rows="2" cols="70" onfocus="if(this.value == 'Message :') this.value='';" onblur="if(this.value == '') this.value='Message :';" required>Message :</textarea>
+						<input name="submit" type="submit" value="Send" />
+					</form>
+				</div>
+			</div>
+			</div>
+			<!--End-contact-->
+
+		</div>
+		<!--End-content-->
+		<!--start-footer-->
+		<div class="footer">
+			<div class="wrap">
+				<div class="footer-grids">
+					<div class="footer-left">
+						<ul>
+							<li><a class="flinkedin" href="https://www.linkedin.com/in/ashujainvi/" target="_blank"> <span class="tooltiptext">Connect on Linkedin</span></a></li>
+							<li><a class="fface" href="https://www.facebook.com/ashutosh.jainvi" target="_blank"><span class="tooltiptext">Connect on Facebook</span> </a></li>
+							<li><a class="fgit" href="https://github.com/ashujainvi" target="_blank" ><span class="tooltiptext">Connect on Github</span> </a></li>
+							<li><a class="finsta" href="https://www.instagram.com/ashu_jainvi/" target="_blank"><span class="tooltiptext">Connect on instagram</span> </a></li>
+							<li><a class="fpin" href="https://in.pinterest.com/ajainvi/jainvis-designs/" target="_blank"><span class="tooltiptext">Connect on pinterest</span> </a></li>
+							<div class="clear"> </div>
+						</ul>
+					</div>
+					<div class="footer-right">
+						<p>&copy 2017 <a href="">Ashutosh Jainvi</a></p>
+									<script type="text/javascript">
+										$(document).ready(function() {
+											$().UItoTop({ easingType: 'easeOutQuart' });
+										});
+									</script>
+						<!--move-top-path-->
+						<script type="text/javascript" src="js/move-top.js"></script>
+						<script type="text/javascript" src="js/easing.js"></script>
+						<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event){		
+									event.preventDefault();
+									$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+								});
+							});
+						</script>
+						<!---move-top-path-->
+			    		<a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+					</div>
+					<div class="clear"> </div>
+				</div>
+			</div>
+		</div>
+		<!--End-footer-->
+		<!--End-wrap-->
+		<!-- ============== SCRIPTS ================= -->			
+				<!-- script for header -->
+				<script type="text/javascript">
+					$(function(){
+						createSticky($("#header"));
+						});
+					function createSticky(sticky) {
+						if (typeof sticky !== "undefined") {
+							var	pos = sticky.offset().top,
+								win = $(window);
+							win.on("scroll", function() {
+				    			win.scrollTop() >= pos ? sticky.addClass("clone") : sticky.removeClass("clone");      
+							});		
+						}}
+				</script>
+				<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+				<!-- // custom script -->
+				<script type="text/javascript" src="js/app.js"></script>
+				<script src="js/modernizr-2.6.2.min.js"></script>
+				<!-- scripts for the menu button -->
+				<script src="js/polyfills.js"></script>
+				<!-- <script src="js/menu.js"></script> -->
+				<script type="text/javascript" src="js/animateItem.js"></script>
+			<!-- ========= SCRIPTS END ======= -->
+	</body>
+</html>
+
