@@ -15,11 +15,23 @@ $( '.switch' ).toggle(function() {
 	$('#light-bulb2').animate({'opacity': '1'},300);
 });
 
-// display nav settings
+// display nav settings.
 var navSettingsWrapper = document.querySelector(".nav_settings--wrapper");
-function displayNavSettings() {
+function displayNavSettings(event) {
+	event.preventDefault();
 	navSettingsWrapper.classList.toggle("nav--expanded");
 }
+
+// close nav setting wrapper if clicked outside. 
+document.addEventListener("click", function(event) {
+	if(!event.target.matches('.nav_settings--button')) {
+		if(event.target.matches('.nav_settings--wrapper')) {
+			return;
+		} else {
+			navSettingsWrapper.classList.remove("nav--expanded");
+		}
+	}
+});
 
 // hero_message button toggle
 var confirmClass = "hero_message--confirm";

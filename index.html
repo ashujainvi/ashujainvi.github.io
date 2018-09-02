@@ -18,12 +18,15 @@
 	</head>
 
 	<body>
-		<div class="nav_settings--button" onclick="displayNavSettings()">
+		<div class="nav_settings--button" onclick="displayNavSettings(event)">
 			<div class="nav_settings--icon"><i class="fa fa-sliders"></i></div>
 		</div>
 		<div class="nav_settings--wrapper">
 			<div class="nav_settings--header">
 				<h2>Settings</h2>
+			</div>
+			<div class="nav_settings--content">
+				<p><span class="quotation-mark">“</span>I'm working on it, okay? Settings will be here soon. Jeez! Gimme a break.<span class="quotation-mark">“</span></p>
 			</div>
 		</div>
 		<!-- ================ LANDING PAGE STARTS ================== -->
@@ -50,7 +53,7 @@
 				
 				<div class="hero-content--lower"> 
 					<div class="hero_content--lower-inner">
-						<h1>Welcome to Ashutosh's room simulator<span class="hero_content--punctuation">! This room is pure JS, no frameworks.</span>
+						<h1>Welcome to Ashutosh's room simulator<span class="hero_content--punctuation">! This room is pure JS, no framework.</span>
 							<span class="usernameDisplayField blue display-none"></span><span tabindex="1" class="hero_username--edit display-none" onclick="editUsername()">edit</span>
 						</h1>
 						<input id="usernameInputBox" class="hero_usernameInputBox" type="text" placeholder="Hey You! Tell me your name & I will give you some secrets." onkeypress="saveUsername(event)" autofocus>
@@ -77,9 +80,7 @@
 			</div>
 			<div id="cn-overlay" class="cn-overlay"><span>Click anywhere to EXIT</span><span>Click on button to EXIT</span></div> -->
 			<!-- =================== MENU ENDS ===================== -->
-
-			<div class="header" id="home">
-				<!--start-wrap-->
+			<!-- <div class="header" id="home">
 				<div class="wrap">
 					<div class="top-header" >
 						<div class="logo" id="header" >
@@ -87,40 +88,42 @@
 						</div>
 						<div class="clear"> </div>
 					</div>
-					<!-- start page-2 images show -->
 					<div class="images-container">
 						<div class="creativity hidden"></div>
 						<div class="guy floating"></div>
 						<div class="bench"></div>
-					</div>
-					<!-- end page-2 images -->
-							
+					</div>							
 				</div>
-			</div>
+			</div> -->
 			<!--End-header-->
 			<!--start-content-->
 		<div class="content backgroundRepeat">
-			<div class="wrap ">
+			<div class="wrap">
 			<div class="about-me-head recent-works-head" id="about">
 					<div class="headings" ><img src="images/about.png" width="540px" class="marginLeft"></div>
-					<p>My name is <span class="yellow">Ashutosh Jainvi</span>. I am a  software engineer and web designer  based in Buffalo, New York with 3 years of designing experience. I am currently studying computer science at <span class="yellow">University at Buffalo</span>.</p>
+					<p>Ok ok here are some details about me</p>
+
+					<!-- <p>My name is <span class="yellow">Ashutosh Jainvi</span>. I am a  software engineer and web designer 
+						based in Buffalo, New York with 3 years of designing experience. I am currently studying computer science at 
+						<span class="yellow">University at Buffalo</span>.</p> -->
+
 				</div>
 				<!--start-top-grids-->
 				<div class="top-service-grids">
-					<div class="top-service-grid hidden">
-						<a href=""><img src="images/top-grid-pic1.png" alt="Designer" /></a>
+					<div class="top-service-grid">
+						<a href=""><img class="card-image" src="images/top-grid-pic1.png" alt="Designer" /></a>
 						<a href=""><span>Designer</span></a>
-						<p>I design!</p>
+						<p>I design</p>
 					</div>
-					<div class="top-service-grid hidden">
-						<a href=""><img src="images/top-grid-pic2.png" alt="" /></a>
+					<div class="top-service-grid">
+						<a href=""><img class="card-image" src="images/top-grid-pic2.png" alt="" /></a>
 						<a href=""><span>Thinker</span></a>
-						<p>I explore!</p>
+						<p>I explore</p>
 					</div>
-					<div class="top-service-grid hidden">
-						<a href=""><img src="images/top-grid-pic3.png" alt="Developer" /></a>
+					<div class="top-service-grid">
+						<a href=""><img class="card-image" src="images/top-grid-pic3.png" alt="Developer" /></a>
 						<a href=""><span>Developer</span></a>
-						<p>I implement!</p>
+						<p>I implement</p>
 					</div>
 					<div class="clear"></div>
 				</div>
@@ -131,23 +134,23 @@
 				<div class="wrap">
 					<div class="skills-grids">
 						<div class="skills-grid skills-grid1">
-							<div class="skills-grid-left hidden" >
+							<div class="skills-grid-left">
 								<span></span>
 							</div>
 							<div class="skills-grid-right">
-								<h3><a href=""> UI/UX Designer</a></h3>
+								<h3>UI/UX Designer</h3>
 								<p>- Adobe Photoshop- Illustrator - After Effects - HTML5 - CSS3 - Bootstrap - Javascript - jQuery - Wordpress - </p>
-								<a class="skillsbtng" href="Ashutosh_resume_designer_2017.pdf" target="_blank">Designer Resume</a>
+								<a class="skillsbtng button_skills" href="Ashutosh_resume_designer_2017.pdf" target="_blank">Designer Resume</a>
 							</div>
 							<div class="clear"> </div>
 						</div>
 						<div class="skills-grid2">
 							<div class="skills-grid2-left">
-								<h3><a href="">Developer</a></h3>
+								<h3>Developer</h3>
 								<p>- C - Python - Java - R - NodeJs - ExpressJs - SQL - Solr - Lucene -</p>
-								<a class="skillsbtnb" href="Ashutosh_resume_2017.pdf" target="_blank">Developer Resume</a>
+								<a class="skillsbtnb button_skills" href="Ashutosh_resume_2017.pdf" target="_blank">Developer Resume</a>
 							</div>
-							<div class="skills-grid2-right hidden" >
+							<div class="skills-grid2-right">
 								<span></span>
 							</div>
 							<div class="clear"> </div>
