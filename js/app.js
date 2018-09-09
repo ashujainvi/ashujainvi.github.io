@@ -7,12 +7,13 @@ var red = "red";
 var primarySiteColor = "--primary-site-color";
 // script for landing switch toggle bulb
 
-$( '.switch' ).toggle(function() {
-	$('#switch-on').animate({'opacity': '0'});
-	$('#light-bulb2').animate({'opacity': '0'},500);
-}, function() {
+//Switch script
+$('.switch').toggle(function() {
 	$('#switch-on').animate({'opacity': '1'});
-	$('#light-bulb2').animate({'opacity': '1'},300);
+	$('#light-bulb2').animate({'opacity': '1'},500);
+}, function() {
+	$('#switch-on').animate({'opacity': '0'});
+	$('#light-bulb2').animate({'opacity': '0'},300);
 });
 
 // display nav settings.
