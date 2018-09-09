@@ -152,7 +152,7 @@ body {
 	height: 32%;
 	opacity: 0;
 	background: var(--primary-background-color--light);
-	overflow: auto;
+	overflow: hidden;
 	z-index: 4;
 	border-radius: 4px;
 	pointer-events: none;
@@ -284,6 +284,7 @@ body {
 	padding: 10px;
 	float: left;
 	margin: 100px 0 0 20px;
+	max-width: 310px;
 }
 
 .hero_username--edit {
@@ -297,7 +298,7 @@ body {
 }
 
 .guy {
-	/* position: relative; */
+	position: relative;
 	width: 110px;
 	height: 220px;
 	margin: auto;
@@ -320,6 +321,7 @@ body {
 	background: url(../images/couch.png) no-repeat 0 0;
 	background-size: 100%;
 	margin: auto;
+	/* margin-left: 18%; */
 	margin-top: -299px;
 }
 
@@ -1664,6 +1666,13 @@ to {background-position: -1366px 0;}
 @media only screen and (max-width: 480px) and (min-width:320px) {
 	.hero_content--upper {
 		width: 95%;
+	}
+	.nav_settings--button {
+		left: 10px;
+	}
+
+	.nav_settings--wrapper {
+		left: 8px;
 	}
 	.wrap{
 		width:90%;
