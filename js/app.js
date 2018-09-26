@@ -1,5 +1,5 @@
 // website color scheme
-var mainBlue = "#04aedf";
+var mainBlue = "#4a97ff";
 var green = "green";
 var red = "red";
 
