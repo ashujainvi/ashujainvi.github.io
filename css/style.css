@@ -410,6 +410,40 @@ body {
 	padding-top: 70px;
 	margin-top: 110px;
 }
+.feature_zone-icon-wrapper {
+	width: 100%;
+	overflow: hidden;
+	padding: 60px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+.feature_zone-icons {
+	display: flex;
+	height: 130px;
+	z-index: 4;
+	overflow-x: scroll;
+}
+.feature_zone-icons::-webkit-scrollbar{
+	display: none;
+}
+.feature_zone-icon {
+	position: relative;
+	max-width: 60px;
+	min-width: 60px;
+	height: 60px;
+	margin: 0 20px;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.feature_zone-icon-image {
+	width: 100%;
+	border-radius: 8px;
+	box-shadow: 0 9px 30px 0 rgba(35,39,42,.1);
+}
 .feature_zone-wave {
 	 /* top:100px; */
 }

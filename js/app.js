@@ -118,3 +118,32 @@ function editUsername() {
 	usernameInformator.classList.add("display-none");
 	typed.stop();
 }
+
+
+// draggable divs 
+
+var iconSlider = document.querySelector(".feature_zone-icons");
+var mouseIsDown = false;
+var startX, scrollLeft;
+
+iconSlider.addEventListener('mousedown', function(event) {
+	mouseIsDown = true;
+	startX = event.pageX - iconSlider.offsetLeft;
+	scrollLeft = iconSlider.scrollLeft;
+});
+
+iconSlider.addEventListener('mouseleave', function() {
+	mouseIsDown = false;
+});
+
+iconSlider.addEventListener('mouseup', function() {
+	mouseIsDown = false;
+});
+
+iconSlider.addEventListener('mousemove', function(event) {
+	if(!mouseIsDown) { return }
+	var mousePosX =  event.pageX - iconSlider.offsetLeft;
+	var slideValue = (mousePosX - startX) * 2;
+	iconSlider.scrollLeft = scrollLeft - slideValue;
+
+});
