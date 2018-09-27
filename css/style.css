@@ -412,8 +412,10 @@ body {
 }
 .feature_zone-icon-wrapper {
 	width: 100%;
+	max-width: 1200px;
 	overflow: hidden;
 	padding: 60px;
+	margin: auto;
 	-webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -463,6 +465,17 @@ body {
 	min-width: 1920px;
 	left: 0;
 	height: auto;
+}
+.icon-top {
+	top: 0;
+}
+.icon-bottom {
+	top: 10px;
+	animation-delay: 1s;
+}
+.icon-middle {
+	top: 5px;
+	animation-delay: 0.5s;
 }
 .top-header {
 	padding: 3em 0;
