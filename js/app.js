@@ -128,6 +128,7 @@ var startX, scrollLeft;
 
 iconSlider.addEventListener('mousedown', function(event) {
 	mouseIsDown = true;
+	$(".feature_zone-icons").stop(true);
 	startX = event.pageX - iconSlider.offsetLeft;
 	scrollLeft = iconSlider.scrollLeft;
 });
@@ -138,12 +139,18 @@ iconSlider.addEventListener('mouseleave', function() {
 
 iconSlider.addEventListener('mouseup', function() {
 	mouseIsDown = false;
+
+	var currScrollX = iconSlider.scrollLeft;
+	var scrollDiff = (scrollLeft - currScrollX) * -1;
+	var newScrollX = currScrollX + (scrollDiff * 0.4);
+
+	$(".feature_zone-icons").stop(true).animate({'scrollLeft':newScrollX}, 400, 'linear');
 });
 
 iconSlider.addEventListener('mousemove', function(event) {
-	if(!mouseIsDown) { return }
+	if(!mouseIsDown) { return };
 	var mousePosX =  event.pageX - iconSlider.offsetLeft;
-	var slideValue = (mousePosX - startX) * 2;
+	var slideValue = (mousePosX - startX) * 1.5;
 	iconSlider.scrollLeft = scrollLeft - slideValue;
 
 });
