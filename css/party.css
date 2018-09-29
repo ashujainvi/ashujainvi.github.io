@@ -1,0 +1,273 @@
+/* Last priority - work modal - Magnific Popup CSS */
+.mfp-bg {
+  font-family: 'Source Sans Pro', sans-serif;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1042;
+  overflow: hidden;
+  position: fixed;
+  background: #0b0b0b;
+  opacity: 0.9;
+  filter: alpha(opacity=80); }
+
+.mfp-wrap {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1043;
+  position: fixed;
+  outline: none !important;
+  -webkit-backface-visibility: hidden; }
+
+.mfp-container {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.mfp-container:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle; }
+
+.mfp-align-top .mfp-container:before {
+  display: none; }
+
+.mfp-content {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 auto;
+  text-align: left;
+  z-index: 1045; }
+
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+  width: 100%;
+  cursor: auto; }
+
+.mfp-ajax-cur {
+  cursor: progress; }
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
+  cursor: -webkit-zoom-out;
+  cursor: zoom-out; }
+
+.mfp-zoom {
+  cursor: pointer;
+  cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
+  cursor: zoom-in; }
+
+.mfp-auto-cursor .mfp-content {
+  cursor: auto; }
+
+.mfp-close,
+.mfp-arrow,
+.mfp-preloader,
+.mfp-counter {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.mfp-loading.mfp-figure {
+  display: none; }
+
+.mfp-hide {
+  display: none !important; }
+
+.mfp-preloader {
+  color: #cccccc;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  margin-top: -0.8em;
+  left: 8px;
+  right: 8px;
+  z-index: 1044; }
+
+.mfp-preloader a {
+  color: #cccccc; }
+
+.mfp-preloader a:hover {
+  color: white; }
+
+.mfp-s-ready .mfp-preloader {
+  display: none; }
+
+.mfp-s-error .mfp-content {
+  display: none; }
+
+button.mfp-close,
+button.mfp-arrow {
+  overflow: visible;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+  display: block;
+  padding: 0;
+  z-index: 1046; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+.mfp-close {
+  width:30px;
+  height:30px;
+  line-height: 44px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-decoration: none;
+  text-align: center;
+  opacity: 0.65;
+  padding: 0 0 18px 10px;
+  color: white;
+  font-style: normal;
+  font-size: 28px; 
+  outline:none;
+ }
+  .mfp-close:hover, .mfp-close:focus {
+    opacity: 9; }
+  .mfp-close:active {
+    top: 0px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #eb0058;
+  z-index: 99999999;
+  }
+
+  /* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
+  transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+   opacity: 0.9;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg{
+   opacity: 0;
+}
+/* pop_up */
+.pop_up h2{
+  text-transform: capitalize;
+  font-size: 2em;
+  color: #a2a2a2;
+  margin-bottom: 2%;
+  text-align: center;
+}
+.pop_up p{
+  font-size: 1em;
+  color: #a3a3a3;
+  line-height: 1.8em;
+}
+#small-dialog1, #small-dialog2, 
+#small-dialog3, #small-dialog4, 
+#small-dialog5, #small-dialog6,
+#small-dialog7, #small-dialog8, 
+#small-dialog9, #small-dialog10, 
+#small-dialog11, #small-dialog12,
+#small-dialog13, #small-dialog14, 
+#small-dialog15, #small-dialog16, 
+#small-dialog17, #small-dialog18,
+#small-dialog19, #small-dialog20, 
+#small-dialog21, #small-dialog22{
+  /* background: white; */
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 400px;
+  margin: 40px auto;
+  position: relative;
+  border-radius:2px;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  -o-border-radius:2px;
+  /* color: white; */
+}
+/**
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in #small-dialog1, .my-mfp-zoom-in #small-dialog2, 
+.my-mfp-zoom-in #small-dialog3, .my-mfp-zoom-in #small-dialog4,
+.my-mfp-zoom-in #small-dialog5, .my-mfp-zoom-in #small-dialog6,
+.my-mfp-zoom-in #small-dialog7, .my-mfp-zoom-in #small-dialog8,
+.my-mfp-zoom-in #small-dialog9, .my-mfp-zoom-in #small-dialog10,
+.my-mfp-zoom-in #small-dialog11, .my-mfp-zoom-in #small-dialog12,
+.my-mfp-zoom-in #small-dialog13, .my-mfp-zoom-in #small-dialog14,
+.my-mfp-zoom-in #small-dialog15, .my-mfp-zoom-in #small-dialog16,
+.my-mfp-zoom-in #small-dialog17, .my-mfp-zoom-in #small-dialog18,
+.my-mfp-zoom-in #small-dialog19, .my-mfp-zoom-in #small-dialog20,
+.my-mfp-zoom-in #small-dialog21, .my-mfp-zoom-in #small-dialog22{
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready #small-dialog1, .my-mfp-zoom-in.mfp-ready #small-dialog2, 
+.my-mfp-zoom-in.mfp-ready #small-dialog3, .my-mfp-zoom-in.mfp-ready #small-dialog4, 
+.my-mfp-zoom-in.mfp-ready #small-dialog5, .my-mfp-zoom-in.mfp-ready #small-dialog6,
+.my-mfp-zoom-in.mfp-ready #small-dialog7, .my-mfp-zoom-in.mfp-ready #small-dialog8,
+.my-mfp-zoom-in.mfp-ready #small-dialog9, .my-mfp-zoom-in.mfp-ready #small-dialog10,
+.my-mfp-zoom-in.mfp-ready #small-dialog11, .my-mfp-zoom-in.mfp-ready #small-dialog12,
+.my-mfp-zoom-in.mfp-ready #small-dialog13, .my-mfp-zoom-in.mfp-ready #small-dialog14,
+.my-mfp-zoom-in.mfp-ready #small-dialog15, .my-mfp-zoom-in.mfp-ready #small-dialog16,
+.my-mfp-zoom-in.mfp-ready #small-dialog17, .my-mfp-zoom-in.mfp-ready #small-dialog18,
+.my-mfp-zoom-in.mfp-ready #small-dialog19, .my-mfp-zoom-in.mfp-ready #small-dialog20,
+.my-mfp-zoom-in.mfp-ready #small-dialog21, .my-mfp-zoom-in.mfp-ready #small-dialog22 {
+  opacity: 1;12
+  -webkit-tra12sform: scale(1);
+  -moz-transfo2m: scale(1);
+  -ms-transfor2: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing #small-dialog1, .my-mfp-zoom-in.mfp-removing #small-dialog2, 
+.my-mfp-zoom-in.mfp-removing #small-dialog3, .my-mfp-zoom-in.mfp-removing #small-dialog4, 
+.my-mfp-zoom-in.mfp-removing #small-dialog5, .my-mfp-zoom-in.mfp-removing #small-dialog6,
+.my-mfp-zoom-in.mfp-removing #small-dialog7, .my-mfp-zoom-in.mfp-removing #small-dialog8,
+.my-mfp-zoom-in.mfp-removing #small-dialog9, .my-mfp-zoom-in.mfp-removing #small-dialog10,
+.my-mfp-zoom-in.mfp-removing #small-dialog11, .my-mfp-zoom-in.mfp-removing #small-dialog12,
+.my-mfp-zoom-in.mfp-removing #small-dialog13, .my-mfp-zoom-in.mfp-removing #small-dialog14,
+.my-mfp-zoom-in.mfp-removing #small-dialog15, .my-mfp-zoom-in.mfp-removing #small-dialog16,
+.my-mfp-zoom-in.mfp-removing #small-dialog17, .my-mfp-zoom-in.mfp-removing #small-dialog18,
+.my-mfp-zoom-in.mfp-removing #small-dialog19, .my-mfp-zoom-in.mfp-removing #small-dialog20,
+.my-mfp-zoom-in.mfp-removing #small-dialog21, .my-mfp-zoom-in.mfp-removing #small-dialog22 {
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 0;
+}
