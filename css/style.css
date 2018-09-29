@@ -2209,6 +2209,9 @@ to {background-position: -1366px 0;}
 		margin-top: 5px;
 		margin-left: 5px;
 	}
+	.feature_zone-icon-wrapper {
+		padding: 0px;
+	}
 }
 
 /*.clone {
