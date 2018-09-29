@@ -42,6 +42,10 @@ body {
 	overflow-x: hidden;
 }
 
+.site-wrapper {
+	overflow-x: hidden !important;
+}
+
 .main-wrapper {
 	width: 100vw;
 	overflow-x: hidden;
