@@ -2184,13 +2184,13 @@ to {background-position: -1366px 0;}
 
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
 	.hero_content--upper {
-		margin-top: 0;
+		margin-top: 60px;
 		width: 90%;
 	}
 	.hero_content--lower {
-		width: 90%;
+		display: none;
 	}
 	.switch_container {
 		display: none;
@@ -2204,6 +2204,10 @@ to {background-position: -1366px 0;}
 	}
 	.mobile_display--none {
 		display: none;
+	}
+	.aj-logo {
+		margin-top: 5px;
+		margin-left: 5px;
 	}
 }
 

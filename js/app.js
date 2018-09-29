@@ -3,11 +3,11 @@ var mainBlue = "#4a97ff";
 var green = "green";
 var red = "red";
 
+var screenSize = (window.innerWidth);
 // css variable
 var primarySiteColor = "--primary-site-color";
-// script for landing switch toggle bulb
 
-//Switch script
+// script for landing switch toggle bulb
 $('.switch').toggle(function() {
 	$('#switch-on').animate({'opacity': '1'});
 	$('#light-bulb2').animate({'opacity': '1'},500);
@@ -16,7 +16,7 @@ $('.switch').toggle(function() {
 	$('#light-bulb2').animate({'opacity': '0'},300);
 });
 
-// display nav settings.
+// display nav settings
 var navSettingsWrapper = document.querySelector(".nav_settings--wrapper");
 function displayNavSettings(event) {
 	event.preventDefault();
@@ -66,6 +66,15 @@ function resetHeroMsg() {
 }
 
 // typed initiator
+// add typed js only if width > 768px
+if (screenSize > 768) {
+        var head = document.getElementsByTagName('body')[0];
+        var scriptTag = document.createElement("script");
+        scriptTag.type = "text/javascript";
+        scriptTag.src = "https://cdn.jsdelivr.net/npm/typed.js@2.0.9";
+        head.appendChild(scriptTag);
+}
+
 var typed;
 function initializeTyped(){
 	var stringArray = [
@@ -104,7 +113,9 @@ function saveUsername(event) {
 			usernameDisplay.classList.remove("display-none");
 			usernameDisplay.innerHTML = userName.toLowerCase();
 			usernameInformator.classList.remove("display-none");
-			initializeTyped();
+			if(screenSize > 768) {
+				initializeTyped();
+			}
 		}
 	}
 }
@@ -120,8 +131,7 @@ function editUsername() {
 }
 
 
-// draggable divs 
-
+// draggable icons
 var iconSlider = document.querySelector(".feature_zone-icons");
 var mouseIsDown = false;
 var startX, scrollLeft;
