@@ -26,6 +26,9 @@ img{max-width:100%;}
   position: relative;
 }
 
+header {
+	display: none !important;
+}
 a, button {
   outline: none;
 }
