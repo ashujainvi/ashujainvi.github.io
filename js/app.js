@@ -164,3 +164,16 @@ iconSlider.addEventListener('mousemove', function(event) {
 	iconSlider.scrollLeft = scrollLeft - slideValue;
 
 });
+
+// Register Service Worker
+
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker
+		.register('./service-worker.js')
+		.then(function(registration) {
+			// console.log("success", registration);
+		})
+		.catch(function(err) {
+			// console.log("Service wroker not registered", err);
+		})
+}
