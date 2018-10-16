@@ -1,0 +1,11 @@
+node_modules
+dist/
+tmp
+
+#thumbnail
+._*
+
+#OSX template
+.DS_Store
+.AppleDouble
+.LSOverride

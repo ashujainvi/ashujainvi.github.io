@@ -77,7 +77,7 @@ if (screenSize > 768) {
 
 var typed;
 function initializeTyped(){
-	var stringArray = [
+	const stringArray = [
 	"~ ashutoshjainvi.com$: Hey " +userName+ "! Nice to meet you.", 
 	"~ ashutoshjainvi.com$: Here are few secrets about this room...", 
 	"~ ashutoshjainvi.com$: So, let me help you in waking this guy up.", 
@@ -96,12 +96,12 @@ function initializeTyped(){
 }
 
 // to save user name
-var usernameBox = document.querySelector("#usernameInputBox");
-var userSentencePunctuation = document.querySelector(".hero_content--punctuation");
-var usernameDisplay = document.querySelector(".usernameDisplayField");
-var usernameInformator = document.querySelector(".hero_usernameInformator");
-var usernameEditButton = document.querySelector(".hero_username--edit");
-var userName;
+const usernameBox = document.querySelector("#usernameInputBox");
+const userSentencePunctuation = document.querySelector(".hero_content--punctuation");
+const usernameDisplay = document.querySelector(".usernameDisplayField");
+const usernameInformator = document.querySelector(".hero_usernameInformator");
+const usernameEditButton = document.querySelector(".hero_username--edit");
+const userName;
 
 function saveUsername(event) {
 	if(event.keyCode == 13) {

@@ -1,0 +1,29 @@
+{
+  "name": "ashutosh-jainvi-com",
+  "version": "1.0.0",
+  "description": "Ashutosh Jainvi's Portfolio website",
+  "main": "index.html",
+  "scripts": {
+    "copy": "node ./node_modules/gulp/bin/gulp copy",
+    "serve": "node ./node_modules/gulp/bin/gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashujainvi/ashujainvi.github.io.git"
+  },
+  "author": "Ashutosh Jainvi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashujainvi/ashujainvi.github.io/issues"
+  },
+  "homepage": "https://github.com/ashujainvi/ashujainvi.github.io#readme",
+  "devDependencies": {
+    // "@babel/core": "^7.1.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1"
+  }
+}
